@@ -10,18 +10,20 @@ public class Telefono implements Serializable {
 	private String numero;
 	private String tipo;
 	private String operadora;
+	private String Usuario_cedula;
 
 //Constructores.
 	public Telefono() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Telefono(int codigo, String numero, String tipo, String operadora) {
+	public Telefono(int codigo, String numero, String tipo, String operadora, String usuario_cedula) {
 	super();
 	this.codigo = codigo;
 	this.numero = numero;
 	this.tipo = tipo;
 	this.operadora = operadora;
+	this.Usuario_cedula = usuario_cedula;
 	}
 	
 //Se genera los Getters and Setters.
@@ -57,12 +59,19 @@ public class Telefono implements Serializable {
 	public void setOperadora(String operadora) {
 		this.operadora = operadora;
 	}
+
+	public String getUsuario_cedula() {
+		return Usuario_cedula;
+	}
+
+	public void setUsuario_cedula(String usuario_cedula) {
+		Usuario_cedula = usuario_cedula;
+	}
 	
 //Se genera el toString.
-	
 	@Override
 	public String toString() {
 		return "Telefono [codigo=" + codigo + ", numero=" + numero + ", tipo=" + tipo + ", operadora=" + operadora
-				+ "]";
+				+ ", Usuario_cedula=" + Usuario_cedula + "]";
 	}
 }

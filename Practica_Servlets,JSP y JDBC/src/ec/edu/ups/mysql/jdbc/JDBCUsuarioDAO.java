@@ -21,39 +21,50 @@ public class JDBCUsuarioDAO extends JDBCGenericDAO<Usuario, String> implements U
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	
+//Nos permite insertar en la BD.
 	@Override
 	public void create(Usuario user) {
-		conexionUno.update("INSERT User VALUES (" + user.getCedula() + ", " + user.getNombre() + ", '" + user.getApellido()
+		System.out.println(user.toString());
+		conexionUno.update("INSERT usuario VALUES ('" + user.getCedula() + "', '" + user.getNombre() + "', '" + user.getApellido()
 		+ "', '" + user.getCorreo() + "','"+ user.getContrasena() + "')");
 	}
-
+	
+	
+//Nos permite hacer una busqueda  por medio de la cedula.
 	@Override
 	public Usuario read(String cedula) {
 		Usuario user = null;
 		ResultSet rs = conexionUno.query("SELECT * FROM usuario WHERE cedula="+ cedula);
 		try {
 			if(rs != null && rs.next()) {
-				user = new Usuario(rs.getString("cudula"), rs.getString("nombre"),rs.getString("apellido"),rs.getString("correo"),rs.getString("contrasena"));
+				user = new Usuario(rs.getString("cedula"), rs.getString("nombre"),rs.getString("apellido"),rs.getString("correo"),rs.getString("contrasena"));
 			}
 		}catch (SQLException e) {
 			System.out.println(">>>WARNING (JDBCUserDAO:read): " + e.getMessage());
 		}
-		return null;
+		return user;
 	}
-
+	
+	
+//Nos permite actualizar el usuario con los nuevos datos.
 	@Override
 	public void update(Usuario user) {
-		System.out.println("Actualizando.." + user);
-		conexionUno.update("UPDATE usuario SET name = '" + user.getNombre() + "', apellido = '" + user.getApellido()
-		+ "', correo= " + user.getCorreo() + "', contrasena = '" + user.getContrasena() + " WHERE cedula = " + user.getCedula());
+		//System.out.println("Actualizando.." + user);
+		conexionUno.update("UPDATE usuario SET nombre = '" + user.getNombre() + "', apellido = '" + user.getApellido()
+		+ "', correo= '" + user.getCorreo() + "', contrasena = '" + user.getContrasena() + "' WHERE cedula = " + user.getCedula());
 	}
-
+	
+	
+//Nos permite eliminar un usuario por su cedula.
 	@Override
 	public void delete(Usuario user) {
 		conexionUno.update("DELETE FROM usuario WHERE cedula ="+ user.getCedula());
 	}
-
+	
+	
+//Nos permite listar todos los usuarios de la BD
 	@Override
 	public List<Usuario> find() {
 		List<Usuario> list = new ArrayList<Usuario>();
