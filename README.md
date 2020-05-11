@@ -21,6 +21,9 @@ Practica de Plataformas Web
 3.2.	Registrar, modificar, eliminar, buscar y listar sus teléfonos
 
 
+![Practica01-Agenda Telefonica - Word 5_11_2020 4_18_27 PM](https://user-images.githubusercontent.com/46872883/81612890-2486fc80-93a3-11ea-9679-bbb058c45861.png)
+
+
 
 
 
