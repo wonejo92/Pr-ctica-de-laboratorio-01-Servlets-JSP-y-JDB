@@ -23,6 +23,9 @@ Practica de Plataformas Web
 
 ![Practica01-Agenda Telefonica - Word 5_11_2020 4_18_27 PM](https://user-images.githubusercontent.com/46872883/81612890-2486fc80-93a3-11ea-9679-bbb058c45861.png)
 
+3.3.	 Listar los números de teléfono de un usuario usando su número de cédula o correo electrónico
+
+
 
 
 
