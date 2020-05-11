@@ -25,6 +25,8 @@ Practica de Plataformas Web
 
 3.3.	 Listar los números de teléfono de un usuario usando su número de cédula o correo electrónico
 
+![Practica01-Agenda Telefonica - Word 5_11_2020 4_20_23 PM](https://user-images.githubusercontent.com/46872883/81613070-6c0d8880-93a3-11ea-9672-d507f4d00916.png)
+
 
 
 
