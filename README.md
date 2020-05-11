@@ -12,4 +12,7 @@ Practica de Plataformas Web
 3.	Los usuarios pueden registrarse en la aplicación a través de un formulario de creación de cuentas.
 
 
+![Practica01-Agenda Telefonica - Word 5_11_2020 4_11_36 PM](https://user-images.githubusercontent.com/46872883/81612265-2bf9d600-93a2-11ea-974e-cdb312e9f9c9.png)
+
+
 
