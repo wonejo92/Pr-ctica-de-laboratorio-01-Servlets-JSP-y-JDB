@@ -9,3 +9,7 @@ Practica de Plataformas Web
 
 ![agenda_Telefonica](https://user-images.githubusercontent.com/46872883/81612128-efc67580-93a1-11ea-9a41-aa25775d9561.png)
 
+3.	Los usuarios pueden registrarse en la aplicación a través de un formulario de creación de cuentas.
+
+
+
